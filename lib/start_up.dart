@@ -12,7 +12,7 @@ class StartUp {
     await SplashRepository.getPackage();
     ServiceLocator.registerModels();
     await AppSharedPreferences.init();
-    await Messaging.initFCM();
+    // await Messaging.initFCM();
     PasswordCubit passwordCubit = PasswordCubit();
     GetIt.I<CubitsStore>().passwordCubit = passwordCubit;
     SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
